@@ -1,52 +1,26 @@
 pipeline {
 
-    // jenkins pipeline in groovy
-
     agent any
 
     stages {
-        stage('Make folders and files'){
-
+        stage('Make Folders and files') {
             steps {
-                //what we want jenkins to do
-                bat 'mkdir testingPipeline '// starts batch command - making new directory 
-               
-                    // rather than having multiple bat commands this does the same thing bat '''  then commands then '''
-
                 bat '''
-    
-
+                echo "Stage 1"
                 '''
-
-                //and can use any language
-
             }
-
         }
-        stage('View'){
-
+        stage('View') {
             steps {
-                //
-
-                  bat '''
-            dir
-            type testingPipeline\text.txt
-
+                bat '''
+                echo "Stage 2"
                 '''
-
             }
-
         }
-        stage('Run'){
-
+        stage('Run') {
             steps {
-                //
                 bat 'script.bat'
-
             }
-
         }
-
     }
-
 }
