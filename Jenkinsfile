@@ -10,7 +10,7 @@ pipeline {
             steps {
                 //what we want jenkins to do
                 bat 'mkdir testingPipeline '// starts batch command - making new directory 
-                bat 'echo "Some things ..." > testingPipeline\file.txt' // 
+               
                     // rather than having multiple bat commands this does the same thing bat '''  then commands then '''
 
                 bat '''
