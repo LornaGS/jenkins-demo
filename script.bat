@@ -1,1 +1,1 @@
-echo "A string"
+echo "second string"
