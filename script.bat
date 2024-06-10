@@ -1,1 +1,1 @@
-echo "hello"
+echo "A string"
